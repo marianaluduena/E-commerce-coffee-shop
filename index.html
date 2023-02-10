@@ -2,34 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Css stylessheet and Bootstrap-->
+  <!-- Bootstrap-->
+  <link rel="stylesheet" href="./bst/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./bst/css/bootstrap.min.css.map" />
 
-    <link rel="stylessheet" href="./bst/css/bootstrap.min.css"/>
-    <link rel="stylessheet" href="./bst/css/bootstrap.min.css.map"/>
-    <link rel="stylessheet" href="./css/styles.css"/>
+  <!-- Medias queries-->
 
-    <title>Coffee House</title>
+  <link rel="stylesheet" href="./css/mobile.css" media="(min-width: 320px)"/>
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 576px)"/>
+  <link rel="stylesheet" href="./css/pc.css" media="(min-width: 993px)"/>
+
+  <title>The Coffee House</title>
 </head>
 
 <header>
 
 </header>
 
-<nav class="navbar bg-dark" data-bs-theme="dark">
-    <!-- Navbar content -->
-    
-    
-  </nav>
-  
- 
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">The Coffe House</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-  
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="dropdown-item" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle show" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">Menu</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Hot drinks</a></li>
+            <li><a class="dropdown-item" href="#">Cold drinks</a></li>
+            <li><a class="dropdown-item" href="#">Cold drinks</a></li>
+            <li><a class="dropdown-item" href="#">Snacks & sweets</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Merchandise
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Cups</a></li>
+            <li><a class="dropdown-item" href="#">Mugs</a></li>
+          </ul>
+
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">About us</a>
+        </li>
+      </ul>
+
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
 <body>
 
+  <script src="./bst/js/bootstrap.bundle.min.js"></script>
+  <script src="./bst/js/bootstrap.bundle.min.js.map"></script>
 </body>
 
 </html>
